@@ -5,7 +5,7 @@ const ServiceDetail = () => {
     const { serviceId } = useParams();
     const [service] = useServiceDetail(serviceId)
     // useEffect(()=>{
-    //     fetch(`http://localhost:5000/service/${serviceId}`, 
+    //     fetch(`https://pure-sands-61288.herokuapp.com/service/${serviceId}`, 
     //     // {
     //     //     headers : { 
     //     //         'Content-Type': 'application/json',

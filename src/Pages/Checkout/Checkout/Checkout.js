@@ -23,7 +23,7 @@ const Checkout = () => {
 
         }
 
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://pure-sands-61288.herokuapp.com/order', order)
         .then(res => {
             const {data} = res
             if(data.insertedId){

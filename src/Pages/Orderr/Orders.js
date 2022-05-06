@@ -14,7 +14,7 @@ const Orders = () => {
     useEffect(()=>{
         const getOrders = async() =>{
             const email = user.email;
-            const url = `http://localhost:5000/order?email=${email}`
+            const url = `https://pure-sands-61288.herokuapp.com/order?email=${email}`
             try{
                 const {data} = await axiosPrivate.get(url, )
                 setOrders(data)
@@ -30,7 +30,7 @@ const Orders = () => {
 
         }
         getOrders()
-        //  fetch(`http://localhost:5000/order?email=${email}`)
+        //  fetch(`https://pure-sands-61288.herokuapp.com/order?email=${email}`)
         // // .then(res => res//.json())
         // // .then(data => setOrders(data))
     },[user])
